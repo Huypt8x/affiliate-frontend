@@ -1,15 +1,22 @@
-import React, { useEffect, useState } from "react";
-import API_BASE_URL from "../config";
+import { useEffect, useState } from "react";
+import { getProducts } from "../services/api";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${API_BASE_URL}/products`)
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error("Error fetching products:", err));
+    getProducts()
+      .then((data) => {
+        setProducts(data);
+      })
+      .catch((err) => {
+        console.error("❌ Lỗi gọi API:", err);
+      })
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <p>⏳ Đang tải dữ liệu...</p>;
 
   return (
     <div>
