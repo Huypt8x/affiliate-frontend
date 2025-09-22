@@ -4,6 +4,9 @@
   "outputDirectory": "frontend/dist",
   "framework": "vite",
   "routes": [
-    { "src": "/(.*)", "dest": "/frontend/dist/index.html" }
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
   ]
 }
