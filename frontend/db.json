@@ -1,0 +1,33 @@
+{
+  "affiliates": [
+    {
+      "id": 1,
+      "name": "CapCut",
+      "category": "AI Video",
+      "epu": 49.5,
+      "commission": "30% - 45%",
+      "traffic": "41.6M",
+      "recurring": "12 months",
+      "pricing": "$0 - $99",
+      "year": 2019,
+      "country": "China (CN)"
+    },
+    {
+      "id": 2,
+      "name": "ElevenLabs",
+      "category": "AI Audio",
+      "epu": 136.18,
+      "commission": "22%",
+      "traffic": "23.6M",
+      "recurring": "12 months",
+      "pricing": "$9 - $119",
+      "year": 2019,
+      "country": "United States (US)"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "AI Video" },
+    { "id": 2, "name": "AI Audio" },
+    { "id": 3, "name": "AI Design" }
+  ]
+}
