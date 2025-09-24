@@ -3,6 +3,30 @@
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": "vite",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://superaffiliateaitool.com/$1",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.superaffiliateaitool.com"
+        }
+      ],
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://superaffiliateaitool.com/$1",
+      "has": [
+        {
+          "type": "protocol",
+          "value": "http"
+        }
+      ],
+      "permanent": true
+    }
+  ],
   "routes": [
     {
       "src": "/.*",
