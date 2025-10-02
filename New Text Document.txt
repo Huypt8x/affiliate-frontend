@@ -1,0 +1,41 @@
+@echo off
+cd /d "J:\MMO\affiliate-project\frontend"
+
+echo ===============================
+echo  XOA .git CU
+echo ===============================
+rmdir /s /q .git
+
+echo ===============================
+echo  INIT GIT MOI
+echo ===============================
+git init
+git add .
+git commit -m "Initial commit - frontend project"
+git branch -M main
+
+echo ===============================
+echo  GAN REMOTE GITHUB
+echo ===============================
+git remote remove origin >nul 2>&1
+git remote add origin https://github.com/Huypt8x/affiliate-frontend.git
+git push -u origin main
+
+echo ===============================
+echo  DEPLOY LEN VERCEL
+echo ===============================
+
+:: Kiem tra neu chua login thi se login
+vercel whoami >nul 2>&1
+if %errorlevel% neq 0 (
+    echo Ban chua login Vercel, vui long dang nhap...
+    vercel login
+)
+
+:: Deploy len Vercel (production)
+vercel --prod
+
+echo ===============================
+echo  HOAN TAT !!! 
+echo ===============================
+pause
