@@ -11,7 +11,7 @@ const programs = [
   { id: 9, name: "Merlin AI", categoryLabel: "AI All In One", epu: "$118.8", traffic: "2.1M", commission: "30%", recurring: "Lifetime", pricing: "$15 - $29", country: "US", url: "https://www.getmerlin.in/chat?ref=nzc0zje" },
 
   // === AI Assistant ===
-  { id: 10, name: "Any.do", categoryLabel: "AI Assistant", epu: "$18", traffic: "1.3M", commission: "20%", recurring: "12 months", pricing: "$4.99 - $9.99", country: "IL", url: "https://www.any.do" },
+  { id: 10, name: "Any.do", categoryLabel: "AI Assistant", epu: "$18", traffic: "1.3M", commission: "20%", recurring: "12 months", pricing: "$4.99 - $9.99", country: "IL", url: "https://ambassadors.any.do/?fpr=huy96" },
   { id: 11, name: "Cody", categoryLabel: "AI Assistant", epu: "$65", traffic: "200K", commission: "25%", recurring: "12 months", pricing: "$10 - $50", country: "US", url: "https://meetcody.ai?fpr=huy89" },
 
   // === AI Audio ===
